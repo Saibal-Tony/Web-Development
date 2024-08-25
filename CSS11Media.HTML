@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                background-color: red;
+            }
+            /* to change styles on the basis of device */
+            /* @media not | only mediatype and (expressions) {
+                CSS-code;
+            }*/
+            @media only screen and (orientation: landscape){
+                body{
+                    border: 10px solid purple;
+                }
+            }
+            @media only screen and (max-width: 455px){/* all / printer / speech devices */
+                body{ /* this body will only run when the width is less than 455px */
+                    background-color: blue;
+                }
+                .boxes{
+                    flex-direction: column; /* when the screen size changes the boxes are made from inline to block */
+                }
+            }
+            .boxes{
+                display: flex;
+            }
+            .box{
+                width: 344px;
+                height: 344px;
+                background-color: steelblue;
+                padding: 3px;
+                margin: 3px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            I am a red body.
+        </div>
+        <div class="boxes">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </body>
+</html>

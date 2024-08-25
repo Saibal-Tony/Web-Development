@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .container{
+                background-color: rgb(126, 214, 222);
+                height: 50vh;
+                width: 30vw;
+            }
+            .box{
+                background-color: rgb(16, 0, 86);
+                height: 5vh;
+                width: 3vw;
+                /* transition-property: background-color , transform ; /* fpr using multiple proterties at once */
+                                          /* this can make transition to what you want to use , like for particular trasition in "transform" --> write transform */
+                                          /* for all properties to take part in the transition use --> all */
+                /* transition-duration: 3s ; how much time it will take for the transition to happen */
+                /* transition-timing-function: ease-in-out; */
+                /* transition-delay: 1s ; after how much time it will happen */ 
+                transition: all 3s ease-in-out 1s; /* you can also write all in one line or separately */
+            }
+            .translate{
+                transform: translateX(10vw) translateY(10vh);
+                background-color: rgb(64, 64, 146);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box translate">
+
+            </div>
+        </div>
+    </body>
+</html>

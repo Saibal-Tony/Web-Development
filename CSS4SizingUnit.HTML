@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            *{
+                margin: 0;
+                border: 0;
+            }
+            html{ /* root element */
+                font-size: 20px;
+            }
+            .box{
+                box-sizing: border-box;
+                background-color: blueviolet;
+                border: 2px solid blue;
+                /* width: 1080px ; */
+
+                width: 80vw ; /*viewport width - makes the size of the box with size of the box*/
+
+                margin: auto; /* Centers the box - only in comparision to a div */
+            }
+            .container{
+                box-sizing: border-box;
+                background-color: blueviolet;
+                border: 2px solid blue;
+                width: 80vw ;
+                height: 60vh;/*viewport height*/
+
+                margin:20px auto; /* margin of (top & bottom) & then (left & right)*/
+
+                font-size: 18px;
+                
+            }
+            .container p {
+                /* font-size: 1.5em; /*1.5 times the default/given font size*/
+                font-size: 2rem /* root size the times */
+            }
+            .mycont{
+                background-color: red;
+                color: yellow;
+                font-size: 22px;
+                width: 100vmin; /* depends on the device which to be vw/vh when it is vmax  */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <p>This is a para</p>
+        </div>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis ad voluptatum sunt minus et, excepturi fuga, consectetur sed molestiae quod? Doloribus.</p>
+        </div>
+        <div class="mycont">
+             I am another content
+        </div>
+    </body>
+</html>

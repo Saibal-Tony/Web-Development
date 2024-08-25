@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <!-- Font link -->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Playwrite+ES+Deco:wght@100..400&family=Playwrite+ES:wght@100..400&family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet"> -->
+        <style>
+            /* importing the fonts from google fonts */
+            @import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&family=Playwrite+ES:wght@100..400&family=Playwrite+US+Trad:wght@100..400&display=swap');
+            h1{
+                /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+                font-family: "Playwrite ES Deco", cursive;
+                font-size: 80px;
+
+                font-style: italic; /* makes it italic */
+            
+                font-weight: 1000; /* makes it bold */
+
+                line-height: 2;  /* It is the distance between the two lines */
+               
+                letter-spacing: 100px; 
+
+            }
+            h2{
+                text-transform: capitalize;
+                /* capitalize - first letter capital */
+                /* uppercase - all caps */
+                /* lowercase - all small */
+
+                text-decoration: underline;
+                text-decoration-color: red;
+                text-decoration-style: wavy;
+                /* dashed/dotted */
+
+                text-decoration-thickness: 3px;
+
+                text-indent: 10px;
+                /* Gap to leaves */
+                
+            }
+            p{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                /* The different fonts are separated by commas and if the previous one is not available then next one will be applied */
+            }
+            .lorem{
+                border: 7px solid red;
+
+                text-overflow: ellipsis;
+                /* can overflow from the border */
+                /* clip - cuts the overflown characters */
+
+                overflow: hidden; /*to hide the overflown characters*/
+                word-break: break-all;
+                text-align: center;/* center allignment*/
+            }
+
+            /* colour */
+            .col{
+                color: blueviolet;
+                text-decoration: underline;
+                text-decoration-style: double;
+                text-decoration-color: red;
+            }
+            .one{
+                color: rebeccapurple; /* Color keyword */
+            }
+            .two{
+                color: #0BEE0B; /* Hex code */ 
+            }
+            .three{
+                color: rgb(48, 111, 162); /* RGB */
+            }
+            .four{
+                color: rgba(219, 44, 149 , 0.7); /* rgba */
+                /* a - alpha - gives the opacity */
+            }
+            .five{
+                color: hsl(13, 97%, 54%); /* hsl = hue , saturation , lightness */
+            }
+            h3{
+                background-color: aqua;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- https://codepen.io/web-dot-dev/pen/yLojraG -->
+        <h1>Font</h1>
+        <h2>About font</h2>
+        <div>
+            <p>This is the font testing</p>
+        </div>      
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ipsam molestias minima iusto iste perspiciatis ducimus exercitationem quod, quidem autem odit aut inventore animi sunt consequuntur aspernatur in sed atque.</p>  
+
+        <div>
+            <p class="col">let's learn colour</p>
+
+            <p>
+                <h3>Colour can be of many types:</h3>
+                <ol>
+                    <li class="one">Colour keyboard</li>
+                    <li class="two">Hex colour code</li>
+                    <li class="three">RGB</li>
+                    <li class="four">RGBA</li>
+                    <li class="five">HSL(Hue Saturation Lightness)</li>
+                </ol>
+            </p>
+        </div>
+
+
+    </body>
+</html>

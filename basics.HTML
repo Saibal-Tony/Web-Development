@@ -1,0 +1,295 @@
+hey it's my first HTML file
+<!-- !-for boiler code -->
+ <!-- 
+Client - The user
+Server - The computer that hosts the website
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     Hey there it's my first website. Myself <strong>Saibal</strong>.
+     <script src="scripts.JS"></script>
+     <h1>BOOK 1</h1>
+     <h2>BOOK 2</h2>
+     <h3>BOOK 3</h3>
+     <h4>BOOK 4</h4>
+     <h5>BOOK 5</h5>
+     <h6>BOOK 6</h6>
+
+     <!-- Paragraph -->
+      <!-- Loren (for dummy text) -->
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, vitae iusto magnam quia veritatis libero delectus cumque saepe nisi autem in impedit, illum iste dolor ad suscipit minus dicta. Doloribus!
+      </p>  
+
+      <p> 
+        <!-- target-to open the link in new page -->
+        <!-- Anchor Tag(a) - to link a website with a  -->
+        <a target="_blank" href="www.google.com">Google</a>
+      </p>
+    <!-- Image Tag -->
+    <!-- src - takes the image file -->
+    <!-- alt - displays the image name -->
+    <img height="500" weight="500" src="download.jpeg" alt="Zoro">  
+    
+    <!-- br - break the section -->
+    <br>
+
+    <table>
+        <caption>Brothers & Sisters</caption>
+        <!-- Header -->
+        <thead>
+            <!-- tr - table row -->
+            <tr>
+                <!-- th - table heading -->
+                <th>Name</th>
+                <th>Age</th>
+                <th>Subject</th>
+            </tr>
+        </thead>
+        <!-- Body -->
+        <tbody>
+            <tr>
+                <!-- td - table data -->
+                <td>Saibal</td>
+                <td>23</td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <!-- rowspan - it add the details , taking 2 row spaces -->
+                <td>Soumita</td>
+                <td>13</td>
+                <td rowspan="2">Maths</td>
+            </tr>
+            <tr>
+                <td>Tarpan</td>
+                <td>12</td>
+                <!-- <td>Science</td> -->
+            </tr>
+        </tbody>
+        <!-- Footer  -->
+        <tfoot>
+            <tr>
+                <!-- colspan - it add the details , taking 2 column spaces -->
+                <td colspan="2">Trishika</td>
+                <td>12</td>
+                <td>Science</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- LIST -->
+    <!-- Unordered List -->
+    <ul type="square">
+        <!-- disc(default) / circle -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <!-- Unordered List -->
+    <ol type="1">
+        <!-- 1(default) / A / a / I / i -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+    <!-- Definition List -->
+    <dl>
+        <!-- Defination Term -->
+        <dt>Item 1</dt>
+            <!-- Defination Defination -->
+            <dd>Definition 1 is a term that describes the details about itself.</dd>
+        <dt>Item 2</dt>
+            <dd>Definition 2 is a term that describes the details about itself.</dd>
+        <dt>Item 3</dt>
+            <dd>Definition 3 is a term that describes the details about itself.</dd>
+        <dt>Item 4</dt>
+            <dd>Definition 4 is a term that describes the details about itself.</dd>
+    </dl>
+
+    <!-- Form -->
+    <form action="post">
+        <!-- Post - for multiple details -->
+        <!-- Get - for single detail -->
+        <!-- Label - for the name of the input -->
+
+        <!-- Input Tag - for taking input -->
+        <div>
+            <label for="username">Enter your username</label>
+            <input type="text" id="username" name="User Name" placeholder="Enter your user name: " required autofocus pattern="[a-zA-Z]+">
+            <!-- placeholder - hint for the user to fill -->
+            <!-- required - mandetory field -->
+            <!-- autofocus - cursor will be there by default -->
+            <!-- pattern - to validate the input -->
+        </div>
+        <div>
+            <label for="password">Enter your password</label>
+            <input type="password" id="password" name="Password" placeholder="Enter yout password: "> 
+        </div>
+
+        <!-- radio - buttons -->
+        <div>
+            <!-- name is same to make only one button active -->
+            <input type="radio" id="male" name="Gender" value="Male">
+            <label for="male">Male</label> 
+            <input type="radio" id="female" name="Gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+
+        <!-- checkbox - buttons -->
+        <div>
+
+            <!-- value -->
+            <input type="checkbox" id="agree" name="Agree" value="yes">
+            <label for="agree">I agree to the terms and conditions</label>
+        </div>
+        
+        <!-- Textarea - to write comments -->
+        <div>
+            <label for="message">Enter your message</label>
+            <br>
+            <textarea name="content" id="message" cols="30" rows="10" placeholder="Enter your message">
+            </textarea>
+        </div>
+
+        <!-- Select Tag - fro multiple options -->
+        <div>
+            <!-- select - dropdown -->
+            <label for="country">Select your country</label>
+            <select name="Country" id="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </div>
+    </form>
+
+    <!-- Inline Element - They don't start on a new line & only take up space as per requirement -->
+    <!-- Anchor tag -->
+    <a href="www.google.com">Google</a>
+    <!-- Span - to style a part of the text -->
+    <span>I am span and I am an inline</span>
+
+    <!-- Block Element - They start on new line & take up all the width of the screen -->
+    <!-- Div - Division -->
+    <div id="div1">I am div and I am a block</div>
+    <!-- para -->
+    <p id="p1">I am para and I am a block</p>
+
+    <!-- id - gives every element a specific identification -->
+    <!-- # - id (in CSS) -->
+    <div id="divone" class="red ">
+        <!-- Class - to group elements -->
+        <!-- classes can be repeated & also multiple , but separated with a space -->
+        <!-- . - class (in CSS) -->
+        <p id="para1">I am para 1</p>
+        <p id="para2" class="red bg-green">I am para 2</p>
+        <p id="para3">I am para 3</p>
+    </div>
+    
+    <!-- Video Tag -->
+    <!-- controls - give the video controls -->
+    <!-- autoplay - automatically starts the video-->
+    <!-- loop - runs the video in a loop-->
+    <!-- muted - mutes the video -->
+    <!-- poster - give a thumbnail to the video-->
+    <video src="video.mp4" height="444" controls poster="goku.jpg"></video>
+
+    <!-- Audio Tag -->
+    <!-- controls - give the audio controls -->
+    <!-- autoplay - automatically starts the audio--> 
+    <!-- loop - runs the audio in a loop-->
+    <!-- muted - mutes the audio -->
+    <!-- preload - none(default)-it won't load the audio -->
+    <!--           metadata - it only gets the audio information-->
+    <!--           auto - it loads the audio -->
+    <audio src="sachin.mp3" controls></audio>
+
+    <!-- SVG(Scalable Vector Graphics) - to produce high quality vector images  -->
+    <svg height="100" width="100">
+        <!-- circle - to draw a circle -->
+        <!-- cx - x-coordinate of the center of the circle -->
+        <!-- cy - y-coordinate of the center of the circle -->
+        <!-- r - radius of the circle -->
+        <!-- fill - color of the circle -->
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="cyan"></circle>
+    </svg>
+    <!-- we can also use svg as image tag , but we first need to save the svg file -->
+    <img src="image.svg" alt="The svg image">
+
+    <!-- iframe(inline frame) - embedes a website in your site -->
+    <iframe src="https://www.codewithharry.com/tutorial/html-iframes/#google_vignette" width="400"
+    height="400"></iframe> 
+    <!-- can also link videos -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PvqQx2T_6mo?si=UXQn4_RqCHJaDyzh&amp;start=389" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Canvas - to draw graphics -->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+    <!-- Entities -->
+    <!-- & - &amp; -->
+    <!-- < - &lt; -->
+    <!-- > - &gt; -->
+     this is the code for para &lt;p&gt;&lt;/p&gt;
+    <pre>
+        <!-- shows the output as it is -->
+        <!-- it still will not show the tags -->
+        <p>This is para code</p>
+
+                    this is after few new lines      and some spaces.
+    </pre>
+    <!-- " - &quot; -->
+    <!-- ' - &apos; -->
+    <!-- © - &copy; -->
+    <!-- ® - &reg; -->
+    <!-- (non breaking space) - &nbsp; -->
+    <p>This is an example&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text.</p>
+    <blockquote>
+        <!-- Blockquote - to quote a text -->
+        <!-- cite - to give the source of the quote -->
+        Quotation tag
+        <p>This is a blockquote</p>
+        <cite>Source</cite>
+    </blockquote>
+    <blockquote cite="https://www.brainyquote.com/topics/here-quotes" >
+        Quotes here
+    </blockquote>
+
+    <!-- Quote a Text -->
+    <q>
+        <!-- q - to quote a text -->
+        <!-- cite - to give the source of the quote -->
+        This is a quote
+        <cite>Source</cite>
+    </q>
+
+    <!-- Code Tag -->
+    <!-- code - to write code -->
+    <code>
+        <!-- pre - to show the output as it is -->
+        <pre>
+            <p>
+                This is code
+                int num1 = 5;
+                int num2 = 10;
+                int sum = num1 + num2;
+                System.out.println("The sum is: " + sum);
+            </p>
+        </pre>
+    </code>
+    
+</body>
+</html>
+
+<!-- <HTML></HTML> -->

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .yellow /* 10 */
+            {
+                color: yellow;
+            }
+            h1.yellow /* 10 + 1 */
+            {
+                color: rgb(47, 9, 219);
+            }
+            .cred{
+                color: red;
+            }
+            .cpurple{
+                color: purple;
+            }
+            /* Atribute selector */
+            [data-x = a]
+            {
+                background-color: aqua;
+            }
+            .important{
+                background-color: blueviolet !important; /* This will be having the highest priority , even more than inline CSS */
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <!-- CSS Specificity priority - Points -->
+            <!-- Inline Style - 1000 > ID Selector - 100 > Class or Attribute Selector - 10 > Element Selector - 1 > Universal Selector - 0 -->
+            <!-- psudo class - 10  -->
+            <h1 class = "yellow cred cpurple" data-x = "a">CSS Specificity</h1>
+            <h1 class = "important" style="background-color: brown;">This will be an example</h1>
+        </div>
+    </body>
+</html>

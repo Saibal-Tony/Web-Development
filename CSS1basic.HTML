@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- External CSS -->
+        <link rel="stylesheet" href="CSS1basic.CSS">
+        <!-- Internal CSS -->
+        <style>
+            div , span{
+                /* multiple selector */
+                /* width: 100px;
+                height: 100px;
+                background-color: red; */
+                color: red;
+                background-color: yellow;
+                animation: myfirst 5s;
+            }
+        </style>
+        <style>
+            /* Class Selector */
+            .red{
+                background-color: red;
+            }
+
+            /* Id selector */
+            #green{
+                background-color: green;
+            }
+
+            /* Child Selector */
+            /* This has to be directly linked to it */
+            div > p{
+                color: white;
+                background-color: brown;
+            }
+
+            /* Descendant Selector */
+            /* This can be through any thing , but must be a descendent */
+            div p{
+                background-color: aqua;
+            }
+
+            /* Universal Selector */
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Psudo Selector */
+            /* it makes the tag yellow after visit */
+            a:visited{ 
+                color: yellow;
+            }
+
+            /* Colour of the link */
+            a:links{
+                color: rgb(45, 115, 207);
+            }
+
+            /* After click effect */
+            a:activate{
+                color: red;
+            }
+            
+            /* To make the tag hover */
+            a:hover{
+                background-color: blueviolet ;
+            }
+
+            /* To print the first output */
+            p:first-child{
+                background-color: chocolate;
+            }
+        </style>
+
+    </head>
+    <body>
+        <!-- Inline CSS -->
+        <h1 style="color: purple; background-color: gray;">Hello World</h1>
+
+        <div>
+            Hi everyone. Nice to meet you
+        </div>
+        <div>
+            I like games.
+        </div>
+        <span>
+            Hi family. I love you.
+        </span>
+        <div id="div1">
+            I like to play with my friends.
+        </div>
+
+        <!-- Class Selector -->
+        <div class="red">
+            This is class selector
+        </div>
+
+        <!-- Id Selector -->
+        <div id="green">
+            This is a id selector
+        </div>
+
+        <!-- Child Selector -->
+        <div>
+            Child selector
+            <p>This is a child selecetor</p>
+        </div>
+
+        <!-- Descendant Selector -->
+        <div>
+            Descendant selector
+            <span>
+                <p>This is a Descendant selecetor</p>
+            </span>
+        </div>
+
+        <!-- Seuodo Selector -->
+        <a href="http://www.google.come">Open Google</a>
+        <a href="http://www.facebook.come">Open facebook</a>
+
+        <main>
+            <p>This is one</p>
+            <p>This is second</p>
+        </main>
+    </body> 
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* 
+            h -offset and v -offset: Determines the shadow's horizontal and vertical position.
+            blur: The larger the value, the blurrier the shadow.
+            spread: Expands or shrinks the shadow size.
+            color: Defines the shadow color.
+            inset: Makes the Shadow inner.
+            */
+            .box{
+                border: 2px solid black;
+                padding: 2px;
+
+                /* h-offset v-offset blur spread color inset */
+                box-shadow: 5px 5px 15px 5px #b9252588;
+
+                /* h-offset v-offset blur spread color inset */
+                text-shadow: 2px 2px 4px #ec0dc3;
+
+                outline: 2px solid blue;
+                border: 2px solid black;
+                /* outline stays outside & it doesn't take space */
+                outline-offset: 3px;
+                /* changes the size of the outline */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            I am a box
+        </div>
+    </body>
+</html>

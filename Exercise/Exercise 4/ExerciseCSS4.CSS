@@ -1,0 +1,117 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo img{
+    width: 160px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI';
+}
+.right ul{
+    display: flex;
+    gap: 34px;
+}
+.right ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.right ul li span{
+    padding: 0 3px;
+}
+.part1{
+    padding-top: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.part1 span{
+    font-size: 50px;
+    padding: 10px;
+}
+.part1 img{
+    padding: 0 20px;
+}
+.part2{
+    display: flex;
+    padding: 50px 200px ;
+    justify-content: center;
+    font-size: 28px;
+    text-align: center;
+}
+.part3{
+    display: flex;
+    justify-content: center;
+}
+.part3 span{
+    text-align: center;
+    width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid  rgb(26, 166, 232);
+    background-color: rgb(26, 166, 232) ;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.part4{
+    display: flex;
+    justify-content: center;
+    padding: 60px ;
+    align-items: center;
+}
+.text{
+    padding: 0 10px
+}
+.part4 span:first-of-type{
+    font-size: 30px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin: 0 200px;
+    gap: 12px;
+}
+.box{
+    padding: 40px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+.box button{
+    justify-content: center;
+    width: 120px;
+    border-radius: 5px;
+    font-size: small;
+    border: 2px solid  rgb(40, 208, 65);
+    background-color: rgb(40, 208, 65) ;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+.box p:first-child{
+    font-weight: 700;
+    font-size: 25px;
+    padding: 0 10px;
+    margin: 0px 0px;
+}
+.box p:nth-child(2){
+    font-size: 15px;
+    padding: 0 5px;
+}
+.box button a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 1145px) {
+    .grid{ 
+        grid-template-columns: 1fr; 
+    }
+}

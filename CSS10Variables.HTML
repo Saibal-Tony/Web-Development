@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSS Varibale</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* Declaring  a varibale (This is a global varibale)*/
+            :root{
+                --color: blue;
+                --seccolor: rgb(174,174,222);
+                --defpad: 23px; /* default padding */
+            }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .nav{              /* declaring color of block using var() */
+                background-color: var(--color);
+            }
+            ul{
+                display: flex; /* makes the items in one line */
+            }
+            ul li{
+                list-style: none;
+                padding: var(--defpad);
+                opacity: 0.3;
+            }
+            ul li:first-child{
+                /* Local varibale */
+                --color: rgb(226, 30, 30); /* this one will override the global varibale */
+                background-color: var(--color , blue); /* this is a fall back varibale , if the previous one is not present then put that color */
+            }
+            .container{
+                background-color: var(--seccolor);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>COntact</li>
+            </ul>
+        </div>
+        <div class="container">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut optio sint corporis quos repellendus quae numquam quidem molestiae saepe, commodi labore, aliquid architecto cum ducimus! Nesciunt libero est eaque iure magnam eius at odio commodi, debitis ipsa animi! Possimus doloribus dicta vero vel?
+        </div>
+    </body>
+</html>

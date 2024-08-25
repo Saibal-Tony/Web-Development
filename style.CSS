@@ -1,0 +1,36 @@
+/* CSS - Cascading Style Sheets */
+body {
+    background-color: rgb(104, 167, 206);
+    color: white;
+}
+
+td {
+    border: 2px solid black;
+}
+
+span {
+    background-color: rgb(141, 185, 99);
+}
+
+/* . - for class */
+/* # - for id */
+#div1 {
+    background-color: rgb(235, 86, 86);
+    padding: 10px;
+    margin: 10px;
+}
+
+#p1 {
+    background-color: rgb(238, 118, 230);
+}
+
+.red {
+    color: red;
+}
+.bg-green {
+    background-color: rgb(86, 213, 101);
+}
+#divone {
+    background-color: rgb(32, 25, 170);
+    
+}

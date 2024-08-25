@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Flex Box</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .container{
+                border: 2px solid red;
+                display: flex;
+                height: 80vh;
+
+                justify-content: center; /* horizontally centers it */
+                /* space-between - covers the box by spreading it */
+                /* flex-end - pushes it to the end */
+
+                align-items: center; /* vertically centers it --> we also us =e it when there is only one line */
+
+                flex-direction: column; /* makes it in column form */
+                /* column-reverse - reverses the column */
+
+                flex-wrap: wrap; /* arranges the extra boxes onto the next line */
+
+                align-content: center; /* aligns the content to the center --> we use it when there are multiple lines*/
+
+                flex-flow: row wrap; /* fisrt flex direction --- then flex type*/
+
+                gap: 30px 90px ; /* decides the gap between elements --> row-column */
+
+                row-gap: 100px; /* gap in between rows */
+                column-gap: 20px; /* gap in between columns */
+            }
+            .item{
+                height: 36px;
+                width: 36px;
+                border: 2px solid black;
+                margin: 4px;
+                background-color: blueviolet;
+            }
+            /* default order is 0 */
+            /* if same order then the first elemnet comes first*/
+            .order-1{ /* higher the order farther it goes */
+                order: 1;
+            }
+            .order-2{
+                order: 2;
+            }
+            .order-3{
+                order: 3;
+            }
+            .item1{
+                flex-grow: 2; /* by default 0 ; this just take place in one row and that perticular element will take 2 places extra */
+
+                flex-shrink: 2; /* after reducing the display size each elemnt will be having 1/2 the size */
+
+                align-self: flex-end; /* overrides the postion of on element to move to the bottom ; flex-start - move to top */ 
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="item order-1 item1">1</div>
+                <div class="item order-2">2</div>
+                <div class="item order-3">3</div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </main>
+    </body>
+</html>
