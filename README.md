@@ -7,15 +7,15 @@
 - If you can't see a version, look for the issue or reinstall the package.
 - If you don't have a GitHub account then first create it from here [https://github.com/](https://github.com/).
 ### If you are on the correct path then just link your GitHub account with git:
-  Open up the terminal and then enter this line with your name in it
+  - Open up the terminal and then enter this line with your name in it
   ```bash
   git config --global user.name "your name here"
   ```
-  The next step is to enter your email Id in this line 
+  - The next step is to enter your email Id in this line 
   ```bash
   git config --global user.email "your email Id here"
   ```
-  You can also check if your name/email Id is linked or not
+  - You can also check if your name/email Id is linked or not
   ```bash
   git config --global user.name
   git config --global user.email
