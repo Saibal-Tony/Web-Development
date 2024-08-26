@@ -1,3 +1,9 @@
+# Setup for GitHub
+- Download the [git](https://git-scm.com/downloads) first.
+
+# Steps to upload your files in git
+
+
 # To upload large file in GitHub
 To manage large files in your repository, follow these steps:
 
