@@ -66,12 +66,11 @@
 ```bash
     git branch
 ```
-  To push the changes to GitHub:
+  To push the changes to GitHub (branch name - main / master):
   
 ```bash
-    git push -u origin master
+    git push -u origin <branch-name>
 ```
-
     
   To check the history of the previously added files
 ```bash
