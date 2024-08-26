@@ -27,9 +27,8 @@
 # Steps to upload your files in git
   To link that folder to the GiHub
     ```bash
-    
-    git init
-    ```
+    git config --global --edit
+    ``
     
   To check the status of the file in the git
     ```bash
