@@ -82,6 +82,9 @@
   ```bash
     git branch <branch name>
   ```
+  To change the branch
+  ```bash
+    git checkout <branch name>
  
 
 # To upload large files on GitHub
