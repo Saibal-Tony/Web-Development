@@ -62,6 +62,10 @@
     git commit -m "Your commit message"
  ```
 
+  To check the branch name
+```bash
+    git branch
+```
   To push the changes to GitHub:
   
 ```bash
