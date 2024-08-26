@@ -4,11 +4,14 @@
   ```bash
   git --version
   ```
-  
+  If you can't see a version, look for the issue or reinstall the package.
+- If you are on the correct path then just link your GitHub account:
+  If you don't have a GitHub account then first create it from here [https://github.com/](https://github.com/). 
+-   
 # Steps to upload your files in git
 
 
-# To upload large file in GitHub
+# To upload large files on GitHub
 To manage large files in your repository, follow these steps:
 
 ### 1. Install Git LFS
