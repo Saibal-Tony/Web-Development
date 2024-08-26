@@ -1,6 +1,10 @@
 # Setup for GitHub
 - Download the [git](https://git-scm.com/downloads) first.
-
+- Then open up your terminal and check if the git is properly installed or not:
+  ```bash
+  git --version
+  ```
+  
 # Steps to upload your files in git
 
 
