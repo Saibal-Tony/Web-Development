@@ -26,9 +26,17 @@
     ```
 # Steps to upload your files in git
   To check the status of the fie in the git
-  ```bash
-  git status
-  ```
+    ```bash
+    git status
+    ```
+  To add a particular file
+    ```bash
+    git add <file-name>
+    ```
+  To add all the files
+    ```bash
+    git add .
+    ```
 
 # To upload large files on GitHub
 To manage large files in your repository, follow these steps:
