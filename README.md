@@ -1,31 +1,36 @@
 # Setup for GitHub
 - Download the [git](https://git-scm.com/downloads) first.
 - Then open up your terminal and check if the git is properly installed or not:
-  ```bash
-  git --version
-  ```
+    ```bash
+    git --version
+    ```
 - If you can't see a version, look for the issue or reinstall the package.
 - If you don't have a GitHub account then first create it from here [https://github.com/](https://github.com/).
 ### If you are on the correct path then just link your GitHub account with git:
   - Open up the terminal and then enter this line with your name in it
-    ```bash
-    git config --global user.name "your name here"
-    ```
+      ```bash
+      git config --global user.name "your name here"
+      ```
   - The next step is to enter your email Id in this line 
-    ```bash
-    git config --global user.email "your email Id here"
-    ```
+      ```bash
+      git config --global user.email "your email Id here"
+      ```
   - You can also check if your name/email Id is linked or not
-    ```bash
-    git config --global user.name
-    git config --global user.email
-    ```
+      ```bash
+      git config --global user.name
+      git config --global user.email
+      ```
   - If you want to change something
-    ```bash
-    git config --global --edit
-    ```
+      ```bash
+      git config --global --edit
+      ```
 # Steps to upload your files in git
-  To check the status of the fie in the git
+  To link that folder to the GiHub
+    ```bash
+    git init
+    ```
+    
+  To check the status of the file in the git
     ```bash
     git status
     ```
@@ -36,6 +41,16 @@
   To add all the files
     ```bash
     git add .
+    ```
+    
+  To check the history of the previously added files
+    ```bash
+    git log
+    ```
+    
+  To commit the files
+    ```bash
+    git commit -m "initial commit"
     ```
 
 # To upload large files on GitHub
