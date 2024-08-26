@@ -25,23 +25,49 @@
       git config --global --edit
       ```
 # Steps to upload your files in git
-  To link that folder to the GiHub
-    ```bash
-    git config --global --edit
-    ``
-    
-  To check the status of the file in the git
-    ```bash
+
+  To initialize a Git repository in the folder:
+  
+ ```bash
+    git init
+ ```
+
+  To link the folder to GitHub:
+  
+```bash
+    git remote add origin <repository-URL>
+```
+
+  To check the status of the files in Git:
+  
+```bash
     git status
-    ```
-  To add a particular file
-    ```bash
+ ```
+
+  To add a particular file:
+  
+```bash
     git add <file-name>
-    ```
-  To add all the files
+ ```
+
+  To add all the files:
+  
     ```bash
     git add .
     ```
+
+  To commit the changes:
+  
+    ```bash
+    git commit -m "Your commit message"
+    ```
+
+  To push the changes to GitHub:
+  
+    ```bash
+    git push -u origin master
+    ```
+
     
   To check the history of the previously added files
     ```bash
