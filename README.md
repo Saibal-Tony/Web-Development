@@ -76,7 +76,12 @@
 ```bash
     git log
 ```
-    
+
+# More of GitHub:
+  Making new branch
+  ```bash
+    git branch <branch name>
+  ```
  
 
 # To upload large files on GitHub
