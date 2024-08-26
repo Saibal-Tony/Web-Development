@@ -20,6 +20,10 @@
   git config --global user.name
   git config --global user.email
   ```
+  - If you want to change something
+    ```bash
+    git config --global --edit
+    ```
 # Steps to upload your files in git
 
 
