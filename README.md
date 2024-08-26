@@ -52,32 +52,29 @@
 
   To add all the files:
   
-    ```bash
+```bash
     git add .
-    ```
+```
 
   To commit the changes:
   
-    ```bash
+```bash
     git commit -m "Your commit message"
-    ```
+ ```
 
   To push the changes to GitHub:
   
-    ```bash
+```bash
     git push -u origin master
-    ```
+```
 
     
   To check the history of the previously added files
-    ```bash
+```bash
     git log
-    ```
+```
     
-  To commit the files
-    ```bash
-    git commit -m "initial commit"
-    ```
+ 
 
 # To upload large files on GitHub
 To manage large files in your repository, follow these steps:
