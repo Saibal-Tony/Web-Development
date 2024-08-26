@@ -15,7 +15,11 @@
   ```bash
   git config --global user.email "your email Id here"
   ```
-
+  You can also check if your name/email Id is linked or not
+  ```bash
+  git config --global user.name
+  git config --global user.email
+  ```
 # Steps to upload your files in git
 
 
