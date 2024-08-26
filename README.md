@@ -9,8 +9,11 @@
 ### If you are on the correct path then just link your GitHub account with git:
 - Open up the terminal and then enter this line with your name in it
   ```bash
-  git config
   git config --global user.name "your name here"
+  ```
+- The next step is to enter your email Id in this line 
+  ```bash
+  git config --global user.email "your email Id here"
   ```
 
 # Steps to upload your files in git
