@@ -6,8 +6,13 @@
   ```
 - If you can't see a version, look for the issue or reinstall the package.
 - If you don't have a GitHub account then first create it from here [https://github.com/](https://github.com/).
-### If you are on the correct path then just link your GitHub account:
--   
+### If you are on the correct path then just link your GitHub account with git:
+- Open up the terminal and then enter this line with your name in it
+  ```bash
+  git config
+  git config --global user.name "your name here"
+  ```
+
 # Steps to upload your files in git
 
 
