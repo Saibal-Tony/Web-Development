@@ -85,7 +85,12 @@
   To change the branch
   ```bash
     git checkout <branch name>
- 
+  ```
+  To directly create and checkout the branch 
+  ```bash
+    git checkout -b <name/branch name>
+  ```
+
 
 # To upload large files on GitHub
 To manage large files in your repository, follow these steps:
