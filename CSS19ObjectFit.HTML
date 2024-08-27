@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<HTML lang='en'>
+<HEAD>
+   <meta charset='UTF-8'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+   <TITLE>CSS Object Fit</TITLE>
+   <style>
+      .container{
+         height: 686px;
+        width: 688px;
+        border: 2px solid black;
+        background-color: aqua;
+      }
+      img{
+        width: 466px;
+        height: 488px;
+        object-fit: contain;
+        /* contain - fits the full image, but it may contain black spaces */
+        /* cover: covers the given box with the given height and width , but doesn't leave any blank spaces */
+      }
+   </style>
+</HEAD>
+<BODY>
+    <div class="container">
+       <img src="https://i.pinimg.com/736x/9d/22/cc/9d22cc479e75b18f04cf0e3ac66f981a.jpg" alt="">
+    </div>
+</BODY>
+</HTML>
