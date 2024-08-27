@@ -1,7 +1,11 @@
+*{
+    margin: 0;
+    border: 0;
+}
 .container{
     position: relative;
     height: 80vh;
-    width: 80vw;
+    width: 100vw;
     background-color: blue;
 }
 .box{
@@ -20,7 +24,7 @@
         left: 0;
     }
     to{
-        left: 100%;
+        left: 75%;
     }
 }
 @keyframes animate2 {
@@ -28,6 +32,6 @@
         bottom: 0;
     }
     to{
-        bottom: 100%;
+        bottom: 75%;
     }
 }
