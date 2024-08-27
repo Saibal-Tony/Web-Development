@@ -9,16 +9,24 @@
         height: 686px;
         width: 688px;
         border: 2px solid black;
-        background-color: aqua;
+        /* background-color: aqua; */
+        background-image: url(https://plus.unsplash.com/premium_photo-1664547606209-fb31ec979c85?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cm9hZHxlbnwwfHwwfHx8MA%3D%3D); 
+        /* background-image - stops the form copying ; it can repeat itself if the size doesn't fill up */
+        background-position: center center;
+        background-repeat: none; /* to stop it form repeating */ 
       }
       img{
         width: 688px;
         height: 686px;
-        object-fit: cover;
+        object-fit: scale-down;
         /* fill - by default ; it fill the the whole image without any aspect ratio */
         /* contain - fits the full image, but it may contain black spaces */
         /* cover: covers the given box with the given height and width , but doesn't leave any blank spaces */
-        object-position: bottom right; /* top right / right */
+        /* scale-down - file the box after scaling it down , it may be smaller than the given parameters */
+
+        object-position: 50% 50% ; /* it is taking 50% of area */
+        /* 10px 20px - it gives a 10px left and 20 px top gap */
+        /* bottom right / top right / right */ 
       }
    </style>
 </HEAD>
