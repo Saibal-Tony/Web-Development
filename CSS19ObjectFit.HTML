@@ -6,17 +6,19 @@
    <TITLE>CSS Object Fit</TITLE>
    <style>
       .container{
-         height: 686px;
+        height: 686px;
         width: 688px;
         border: 2px solid black;
         background-color: aqua;
       }
       img{
-        width: 466px;
-        height: 488px;
-        object-fit: contain;
+        width: 688px;
+        height: 686px;
+        object-fit: cover;
+        /* fill - by default ; it fill the the whole image without any aspect ratio */
         /* contain - fits the full image, but it may contain black spaces */
         /* cover: covers the given box with the given height and width , but doesn't leave any blank spaces */
+        object-position: bottom right; /* top right / right */
       }
    </style>
 </HEAD>
