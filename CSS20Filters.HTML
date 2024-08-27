@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<HTML lang='en'>
+<HEAD>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <TITLE>CSS Filter</TITLE>
+  <STYLE>
+    .img1{
+      /* filter: blur(20px); */
+      filter: brightness(200%) invert(1) /*0 --> 1*/ opacity(0.6)/*0 --> 1*/;
+    }
+    .img2{
+      filter: contrast(-110%) hue-rotate(90deg);
+    }
+    .img3{
+      filter: grayscale(70%) sepia(50%);
+    }
+  </STYLE>
+</HEAD>
+<BODY>
+  <div class="container">
+    <img class="img1" src="https://c1.wallpaperflare.com/preview/487/716/46/laptop-code-programming-computer.jpg" alt="">
+    <img class="img2" src="https://c4.wallpaperflare.com/wallpaper/256/819/794/avengers-age-of-ultron-the-avengers-tony-stark-robert-downey-jr-wallpaper-preview.jpg" alt="" >
+    <img class="img3" src="https://c4.wallpaperflare.com/wallpaper/922/978/410/movie-thor-ragnarok-chris-hemsworth-thor-wallpaper-preview.jpg" alt="">
+  </div>   
+</BODY>
+</HTML>
