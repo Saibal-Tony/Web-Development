@@ -10,8 +10,8 @@
 }
 .box{
     height: 121px;
-    width: 121px;
-    background-color: red;
+    /* width: 121px;
+    background-color: red; */
     border-radius: 70px;
     position: absolute;
     bottom: 0;
