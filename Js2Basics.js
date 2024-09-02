@@ -24,7 +24,7 @@ let x = "Tony"
 let y = 22;
 let z = 3.55;
 const p = true;
-
+let q = undefined;
 let r = null; // type of null is object --> previously when made it was defined as object , but it's not correct , now we can't change becuase many layouts depends on it
 
 // Object
