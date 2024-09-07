@@ -28,7 +28,7 @@ let q = undefined;
 let r = null; // type of null is object --> previously when made it was defined as object , but it's not correct , now we can't change becuase many layouts depends on it
 
 // Object
- let o = {
+let o = {
     name: "Saibal" , 
     "job code": 3400 // job code is in qoutes because there is space iin between
  }
