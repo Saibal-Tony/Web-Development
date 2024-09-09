@@ -9,3 +9,5 @@ console.log(a.length);
 let friend_1 = "Saibal";
 let friend_2 = "Ayush";
 console.log("My name is " + friend_1 + " and my best friend is " + friend_2);
+
+console.log(`My name is  ${friend_1} and my best friend is ${friend_2}`); // works same as above
