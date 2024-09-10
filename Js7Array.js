@@ -44,3 +44,46 @@ console.log(spl1.splice(1 , 3)); // it will slice the array from address '1' and
 let spl2 = [ 1 , 2 , 3 , 4 , 5 ];
 console.log(spl2.splice(2 , 3 , 233 , 222 , 444  , 555)); // removes the elements and add these numbers after the address mentioned
 console.log(spl2); 
+
+let lp = [ 1 , 2 , 3 , 4 , 15 ];
+for (let index = 0; index < lp.length; index++) {
+    const element =lp[index];
+    console.log(element);
+}
+
+lp.forEach((value , index , arr)=>{
+    console.log(value , index , arr); // prints the value of that index with the full array
+})
+
+let obj ={
+    a: 1,
+    b: 2,
+    c: 3
+}
+
+for (const key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        const element = obj[key];
+        console.log(key , element);
+    }
+}
+
+for (const element of obj) {
+    console.log(element);
+}
+
+// map()
+let mp = [ 1 , 2 , 3 , 4 , 15 ];
+let newArr = mp.map((e)=>{
+    return e**2;
+})
+console.log(newArr);
+
+// filter()
+const greaterThanSeven = (e)=>{
+    if(e > 7){
+        return true;
+    }
+    return false;
+}
+console.log(newArr.filter(greaterThanSeven));
