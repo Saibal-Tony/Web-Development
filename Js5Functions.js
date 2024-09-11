@@ -28,6 +28,8 @@ console.log(res2);
 
 
 // arrow function
+// (parameter) => some code
+
 const func = (x)=>{
     console.log("I am an arrow function: " , x);
 }
