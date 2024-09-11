@@ -26,6 +26,8 @@ let res2 = bigsum( 2 , 4); // it will use the default value of c;
 let res3 = bigsum(10 , 20 , 10); // it will use the value of c given in the parameter;
 console.log(res2);
 
+
+// arrow function
 const func = (x)=>{
     console.log("I am an arrow function: " , x);
 }
