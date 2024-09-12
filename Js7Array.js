@@ -55,6 +55,11 @@ lp.forEach((value , index , arr)=>{
     console.log(value , index , arr); // prints the value of that index with the full array
 })
 
+
+// object ={
+//        key:value,
+//        function
+//        }
 let obj ={
     a: 1,
     b: 2,
