@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<HTML lang='en'>
+<HEAD>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <TITLE>DOMs</TITLE>
+  <style>
+    .box{
+        height: 45px;
+        width: 56px;
+        border: 2px solid black;
+        margin: 5px;
+        padding: 5px;
+    }
+  </style>
+</HEAD>
+<BODY>
+    <div class="bigbox">
+        <div class="boxy">
+            This is a box
+        </div>
+    </div>
+
+    <div class="container"> <!-- this is known as text node which is after the class container and before box1 container -->
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+        <div class="box">Box6</div>
+    </div>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Saibal</td>
+            <td>23</td>
+        </tr>
+    </table>
+
+    <!-- <script>
+        // Document Object Model(DOM) - DOMs represents the page console as HTML 
+        // To map the whole HTML we use DOMs 
+        document.title = "I am a good boy";
+        console.log(document.title);
+        console.log(document.body); // to check the content of thr body 
+        document.body.style.backgroundColor = "green"; // gives an inline css which changes the body properties
+
+        // Browser Object Model(BOM) - It represents additional object provided by the browser
+        /*
+        window.document // shows the document part of the code
+        window.document.body // shows the body of the code
+        */
+
+        /*
+        In the console to change the properties of the particular section ($0)
+        $0.style.backgroundColor = "green";
+        */ 
+    </script> -->
+    <script src="Js8DOM.js"></script>
+</BODY>
+</HTML>
