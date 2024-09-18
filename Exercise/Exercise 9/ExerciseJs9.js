@@ -1,8 +1,22 @@
 console.log("Random Box pattern")
 
-let rand = Math.random();
+let rand = 0 + Math.random()(255);
 
-// let e = document.getElementsByClassName("box")
+let e = document.getElementsByClassName("box").childern
+
+function random{
+    let val1 = Math.ceil(0 + Math.random()*255);
+    let val2 = Math.ceil(0 + Math.random()*255);
+    let val3 = Math.ceil(0 + Math.random()*255);
+    return `rgb(${val1} ,${val2} ,${val3})`
+}
+
+Arrays.array.forEach(e => {
+    e.style.backgroundColor = random();
+    e.style.color = random();
+});
+
+
 // if(rand < 0.2){
 //     e[0].style.backgroundColor = "green"
 //     e[0].style.color = "white"
