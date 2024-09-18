@@ -2,7 +2,7 @@ console.log("Random Box pattern")
 
 let rand = 0 + Math.random()(255);
 
-let e = document.getElementsByClassName("box").childern
+let e = document.getElementsByClassName("box").childern;
 
 function random{
     let val1 = Math.ceil(0 + Math.random()*255);
