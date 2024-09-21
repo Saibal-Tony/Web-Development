@@ -23,8 +23,16 @@
         </span>
     </div>
     <script>
-        document.querySelector(".childcontainer").addEventListener("contextmenu" , ()=>{
-            alert("child container is selected")
+        document.querySelector(".child").addEventListener("click" , ()=>{ 
+            alert("Child is selected") // when you select you will also see all the alerts from the parents too . Like if you live in Kolkata , you obviously live in India and you obviously live in Asia.
+        })
+
+        document.querySelector(".childcontainer").addEventListener("click" , ()=>{
+            alert("Child container is selected")
+        })
+
+        document.querySelector(".container").addEventListener("click" , ()=>{
+            alert("Container is selected")
         })
     </script>
 </BODY>
