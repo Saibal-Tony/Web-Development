@@ -23,7 +23,8 @@
         </span>
     </div>
     <script>
-        document.querySelector(".child").addEventListener("click" , ()=>{ 
+        document.querySelector(".child").addEventListener("click" , (e)=>{ 
+            e.stopPropagation(); // stops the bubling event (which was showing all the alerts when you click on child)
             alert("Child is selected") // when you select you will also see all the alerts from the parents too . Like if you live in Kolkata , you obviously live in India and you obviously live in Asia.
         })
 
@@ -34,6 +35,22 @@
         document.querySelector(".container").addEventListener("click" , ()=>{
             alert("Container is selected")
         })
+
+        // I can change a event by a timer
+        function getRandomColor(){
+            let val1 = Math.ceil(0 + Math.random()*255);
+            let val2 = Math.ceil(0 + Math.random()*255);
+            let val3 = Math.ceil(0 + Math.random()*255);
+
+            return `rgb(${val1} , ${val2} , ${val3})`;
+        }
+        
+
+        setInterval(()=>{
+            document.querySelector(".child").style.backgroundColor = getRandomColor();
+        } , 3000); // 3 sec interval
+
+        
     </script>
 </BODY>
 </HTML>
