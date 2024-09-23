@@ -48,10 +48,15 @@
 
         setInterval(()=>{
             document.querySelector(".child").style.backgroundColor = getRandomColor();
-        } , 3000); // 3 sec interval
+        } , 3000); // 3 sec interval in loop
 
         // clear Interval
         // clearInterval(1); -> 1 is the event no.
+
+        setTimeout(()=>{
+            document.querySelector(".child").style.backgroundColor = getRandomColor();
+        } , 3000); // 3 sec interval, but only changes once
+        // to cancel it - clearTimeout(1)
 
     </script>
 </BODY>
