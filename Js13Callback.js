@@ -7,3 +7,12 @@ setTimeout(()=>{
 }, 2000) ; 
 
 console.log("Saibal is a pro2");
+
+const callback = (arg) =>{
+    console.log(arg)
+}
+const loadScript = (src , useCallback) => {
+    let sc = documnet.createElemnt("script");
+    sc.src = src;
+    sc.onload = callback("Tony");
+}
