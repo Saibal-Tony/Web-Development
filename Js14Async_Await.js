@@ -7,9 +7,12 @@
 // }
 
 async function getData(){ // simulates getting data from the server
-    let x = fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json())
-      .then(json => console.log(json))
+    let x = await fetch('https://jsonplaceholder.typicode.com/todos/1') // getting the data
+    //   .then(response => response.json())
+    //   .then(json => console.log(json))
+    let data = await x.json() // then the data is parsed 
+    console.log(x)
+    return 445;
 }
 
 async function main(){
