@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<HTML lang='en'>
+<HEAD>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <TITLE></TITLE>
+  <style>
+    .bag{
+        background-color: rgb(86, 236, 78);
+        border: 0 ;
+        padding: 10px;
+        margin: 2px;
+        width: 110px;
+        font-size: 15px;
+        font-weight: 300;
+        border-radius: 14px;
+    }
+    .wishlist{
+        /* background-color: rgb(239, 235, 235); */
+        border: 2px solid black ;
+        padding: 6px 39px 6px 30px;
+        margin: 2px;
+        /* width: 110px; */
+        font-size: 15px;
+        font-weight: 300;
+        border-radius: 14px;
+    }
+</style>
+</HEAD>
+<BODY>
+    <button class="bag" onclick="get_quantity = get_quantity + 1; 
+    document.querySelector('.quantity').innerText = `The items in the bag are ${get_quantity}.`;">Add to bag</button>
+    
+    <button class="wishlist" onclick="get_quantity = get_quantity - 1;
+     document.querySelector('.quantity').innerText = `The items in the bag are ${get_quantity}.`;"> ❤️ Wishlist</button>
+    
+    <h1 class="quantity"></h1>
+    <script src="Exercise1.js"></script>
+</BODY>
+</HTML>
