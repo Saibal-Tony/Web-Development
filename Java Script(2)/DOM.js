@@ -1,0 +1,1 @@
+console.dir(document); // prints the special objects methods and properties
