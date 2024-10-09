@@ -1,16 +1,16 @@
 console.log("HI there");
 
-document.querySelector(".box")// give the first box
+document.querySelector(".box");// give the first box
 
-document.querySelector(".box").innerHTML // prints the content of the HTML 
+document.querySelector(".box").innerHTML; // prints all the content of the HTML , including the text and the html content
 
-document.querySelector(".box").innerText // prints the inner text
+document.querySelector(".box").innerText; // prints only text content of the html
 
 document.querySelector(".box").outerHTML // prints the content of the HTML as well sa that HTML also
 
 document.querySelector(".box").tagName // give the tag name
 
-document.querySelector(".box").textContent // print the text without tags
+document.querySelector(".box").textContent // print the text with hidden contents
 
 document.querySelector(".box").hidden = true ; // make the centent hidden so that it can't be seen 
 // same as like this : <div class="box" hidden> Hey I am box </div>

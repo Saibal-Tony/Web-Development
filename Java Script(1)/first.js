@@ -14,6 +14,7 @@ alert("Hi There");
 
  document.getElementsByClassName('here') // getting element by class name
 
+ // quarySelector - selects the first element
  document.querySelector('h1') // getting the element by the tag names
  document.querySelector('#ok') // getting the element by the id name (#) 
  document.querySelector('.here') // getting the element by the class name (.)
