@@ -27,3 +27,14 @@ e[0].closest("container"); // prints the closest
 
 document.querySelector(".container").contains(e[2]); // returns true or false
 
+
+// get attribute 
+let lastbox = document.querySelector("div"); 
+
+console.log(lastbox.getAttribute("class")); // gives the class value it was provided , like - class="boxLast" --> it will give boxLast
+console.log(lastbox.getAttribute("name")); // give the content of the name attribute
+
+
+// set attribute
+console.log(lastbox.setAttribute("class", "123"))
+

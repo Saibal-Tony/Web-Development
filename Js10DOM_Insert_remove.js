@@ -37,8 +37,10 @@ document.querySelector(".box").dataset ;
 let DIV = document.createElement("div"); // DIV - is the empty continer which hold the value ; div - is an empty element created but not seen in DOM until appended
 DIV.innerHTML = "Hi there , nice to meet you <b>Tony</b>";
 DIV.setAttribute("class" , "created"); // class - "created" - made a class name created
-document.querySelector(".container").append(DIV); // we can see this appended at the end 
-document.querySelector(".container").before(DIV); // add before .container
+document.querySelector(".container").append(DIV); // we can see this appended at the end (inside)
+// .prepend() --> this will ne added at the start of the node(inside)
+document.querySelector(".container").before(DIV); // add before .container --> add before the node(outside)
+// .after() --> adds after the node(outside)
 
 let cont = document.querySelector(".container");
 cont.insertAdjacentHTML("afterward" , "Hey there all") // afterbegin ; afterbegin ; beforeend ; afterend
