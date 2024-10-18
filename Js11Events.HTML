@@ -3,7 +3,17 @@
 <HEAD>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <TITLE></TITLE>
+  <TITLE>Event seclector</TITLE>
+  <style>
+    .dark{
+      background-color: black ;
+      color: white;
+    }
+    .light{
+      background-color: white;
+      color: black;
+    }
+  </style>
 </HEAD>
 <BODY>
     <div class="container">
@@ -13,6 +23,8 @@
     <button id="btn2" onclick="console.log('you clicked me');alert('yooooo! budd')">click me 2</button>
     <button id="btn3" ondblclick="console.log('click eme 2 times')">click me 3</button> <!-- ondblclick - you need to click 2 times -->
     <button id="btn4" onmouseover="console.log('you are in the area')">click me 4</button> <!-- onmouseover - when you hover the mouse over the area the action is peerformed -->
+
+    <button id="mode">Change mode</button>
     <script src="Js11Events.js"></script>
 </BODY>
 </HTML>
