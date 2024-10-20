@@ -6,6 +6,32 @@
 //     })
 // }
 
+// async
+function asyunc1(){
+    return new Promise((resolve , reject) =>{
+        setTimeout(()=>{
+            console.log("data1");
+            resolve("success");
+        });
+    });
+}
+function asyunc2(){
+    return new Promise((resolve , reject) =>{
+        setTimeout(()=>{
+            console.log("data2");
+            resolve("success")
+        });
+    });
+}
+
+console.log("Fetching the data");
+asyunc1().then((res) =>{
+    consolelog("fething the data 2");
+    asyunc2().then((res) =>{
+            console.log("fetching the data 3")
+        });
+    });
+
 async function getData(){ // simulates getting data from the server
     let x = await fetch('https://jsonplaceholder.typicode.com/todos/1') // getting the data
     //   .then(response => response.json())
