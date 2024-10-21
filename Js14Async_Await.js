@@ -81,3 +81,16 @@ async function getAllData(){ // we need to make a function to use async code - t
     getData(3);
     getData(4);
 })();
+
+
+async function getDATA(){
+    try {
+        getData(1);
+        getData(2);
+        getData(3);
+        getData(4);
+    }
+    catch (error){ // to read the error we use this 
+        console.log(`Error ${error}`);
+    }
+}
