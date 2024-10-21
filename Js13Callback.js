@@ -1,3 +1,7 @@
+//    async   >>  Promice  >> callback
+//    awiat        chain        hell
+
+
 console.log("Saibal is a pro1"); //asynchronous actions
 console.log("Saibal is a pro2");
 
@@ -125,3 +129,24 @@ res2.then((a) => {
 }).catch((err) => {
     console.log(err); 
 })
+
+// Promise chain
+function GetData (dataId){
+    return new Promise((resolve , reject)=>{
+        setTimeout(()=>{
+            console.log(" Data " + dataId);
+            resolve("Success");
+        },2000);
+    });
+}
+
+GetData(1)
+    .then((res)=>{
+        return GetData(2);
+    })
+    .then((res)=>{
+        return GetData(3);
+    })
+    .then((res)=>{
+        console.log(res);
+    });

@@ -11,7 +11,7 @@ function asyunc1(){
     return new Promise((resolve , reject) =>{
         setTimeout(()=>{
             console.log("data1");
-            resolve("success");
+            resolve("success"); 
         });
     });
 }
@@ -54,3 +54,30 @@ async function main(){
 }
 
 main()
+
+// async 
+function getData(dataId){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Data " + dataId);
+            resolve("Success");
+        }, 2000);
+    });
+}
+
+// Async , Await - you can only use await when there is async - it means the next data will wait until the previous code is finished  
+async function getAllData(){ // we need to make a function to use async code - to counter it we use " IIFE "
+    getData(1);
+    getData(2);
+    getData(3);
+    getData(4);
+} 
+
+// IIFE use
+// (function / await / =>{})();
+(async function () { // while using IIFE we don't need to give the function name 
+    getData(1);
+    getData(2);
+    getData(3);
+    getData(4);
+})();
