@@ -3,3 +3,10 @@
 // like zomate can't use google maps directly , so if API allows it API shares the recommended data that can be shared to the end user from source
 
 console.log("start")
+const URL ="https://cat-fact.herokuapp.com"
+
+const getData = async () => {
+    let response = await fetch(URL);
+    console.log(response);
+    console.log(response.status) // gives just the status
+}
